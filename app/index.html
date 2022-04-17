@@ -4,10 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>payAPI</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <h1></h1>
+    <h1 class="visually-hidden">Dude, Welcome to payAPI</h1>
+    <header class="header">
+      <div class="container header__container">
+        <a href="index.html" class="logo">
+          <img src="images/logo.svg" alt="logo" class="logo__img" />
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Pricing</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="header__link">Schedule a Demo</a>
+      </div>
+    </header>
+    <main class="main">
+      <section class="intro">
+        <div class="container intro__container">
+          <div class="intro__content">
+            <h2 class="intro__title">
+              Start building with our APIs for absolutely free.
+            </h2>
+            <form
+              class="intro__form"
+              action="http://echo.htmlacademy.ru"
+              method="post"
+            >
+              <input
+                class="intro__input"
+                type="email"
+                placeholder="Enter email address"
+                minlength="12"
+                required
+              />
+              <button class="intro__btn" type="submit">Schedule a Demo</button>
+            </form>
+            <p class="intro__subtext">
+              Have any questions?
+              <a href="#" class="intro__subtext-link">Contact Us</a>
+            </p>
+          </div>
+          <img
+            src="images/intro-bg.png"
+            alt="intro background"
+            class="intro__img"
+          />
+        </div>
+      </section>
+    </main>
   </body>
 </html>

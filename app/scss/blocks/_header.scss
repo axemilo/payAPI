@@ -1,0 +1,50 @@
+.header {
+  margin-top: 40px;
+  padding-bottom: 74px;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    @include demo-btn;
+  }
+  &__link:hover {
+    background-color: $light-pink;
+  }
+}
+
+.nav {
+  margin-right: auto;
+
+  &__list {
+    display: flex;
+    padding: 0;
+  }
+
+  &__item {
+    transition: color 400ms ease;
+    margin-right: 40px;
+  }
+  &__item:hover {
+    color: $black;
+  }
+
+}
+
+
+
+@include break-down(768px) {
+  .header {
+   margin-bottom: 48px;
+  }
+  .nav {
+    &__list {
+      padding: 0;
+      margin:0;
+    }
+  }
+}

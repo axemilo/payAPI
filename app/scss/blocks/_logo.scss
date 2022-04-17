@@ -1,0 +1,7 @@
+.logo {
+  margin-right: 64px;
+  transition: opacity 400ms ease;
+  &:hover {
+    opacity: 0.8;
+  }
+}

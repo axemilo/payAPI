@@ -1,24 +1,15 @@
-.intro {
-  padding-bottom: 75px;
-  background-image: url(../images/header-bg.png);
-  background-repeat: no-repeat;
-  background-position: top -680px right -650px;
-  position: relative;
-  z-index: 1;
-  padding-top: 162px;
+.ready {
+  margin-bottom: 96px;
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   &__title {
-    @include large-title;
-    max-width: 546px;
+    @include big-title;
     color: $blue;
   }
-  &__form {
-    margin-bottom: 16px;
-  }
+
   &__input {
     box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
     width: 272px;
@@ -48,69 +39,43 @@
   &__btn:hover {
     background-color: $light-pink;
   }
-  &__subtext-link {
-    color: $blue;
-    transition: color 400ms ease;
-  }
-
-  &__subtext-link:hover {
-    color: $black;
-  }
 }
 
 @include break-down(768px) {
-  .intro {
-    background-position: top -1100px center;
+  .ready {
+    margin-bottom: 100px;
     &__container {
-      flex-direction: column-reverse;
-      text-align: center;
-    }
-    &__img {
-      margin-bottom: 48px;
+      flex-direction: column;
     }
     &__title {
-      @include big-title;
-      width: 573px;
+      margin-bottom: 40px;
     }
   }
 }
 
 @include break-down(375px) {
-  .intro {
-    background-position: top -1170px center;
-    margin: 0;
-    margin-bottom: 80px;
+  .ready {
     &__container {
       max-width: 328px;
-      text-align: center;
-    }
-    &__content {
       align-items: center;
       justify-content: center;
     }
     &__title {
-      width: 327px;
+      margin-top: 0;
       font-size: 32px;
       line-height: 36px;
-    }
-    &__form {
-      margin: 0;
+      text-align: center;
     }
     &__input {
       width: 327px;
-      margin: 0;
+      height: 48px;
       margin-bottom: 16px;
+      padding: 16px 0 14px 29px;
     }
     &__btn {
-      margin: 0;
       width: 327px;
-      margin-bottom: 24px;
-    }
-    &__subtext {
-      margin: 0;
-    }
-    &__img {
-      margin-bottom: 26px;
+      margin: 0 auto;
+      padding: 16px 46px 14px 50px;
     }
   }
 }

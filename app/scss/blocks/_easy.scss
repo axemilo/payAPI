@@ -1,0 +1,59 @@
+.easy {
+  margin-bottom: 150px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    @include big-title;
+    color: $blue;
+    margin-bottom: 24px;
+  }
+  &__text {
+    @include text;
+    color: $light-blue;
+    max-width: 445px;
+  }
+}
+
+@include break-down(768px) {
+  .easy {
+    margin-bottom: 100px;
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    &__img {
+      margin-bottom: 48px;
+    }
+    &__text {
+      max-width: 573px;
+    }
+  }
+}
+
+@include break-down(375px) {
+  .easy {
+    padding: 0;
+    margin-bottom: 80px;
+    &__content {
+      max-width: 328px;
+    }
+    &__title {
+      margin: 0;
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 24px;
+    }
+    &__text {
+      margin: 0;
+    }
+    &__img {
+      width: 328px;
+      height: 209px;
+      margin-bottom: 48px;
+    }
+  }
+}

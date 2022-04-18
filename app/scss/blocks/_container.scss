@@ -3,9 +3,3 @@
   margin: 0 auto;
   padding: 20px 0;
 }
-
-@include break-down(768px) {
-  .container {
-    max-width: 689px;
-  }
-}

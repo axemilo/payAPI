@@ -13,7 +13,6 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'Public Sans', 'Arial', sans-serif;
   color: $light-blue;
   @include text;
   background-color: #edf3f8;
@@ -34,7 +33,5 @@ input {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
   display: block;
 }

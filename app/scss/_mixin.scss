@@ -37,7 +37,10 @@
   font-family: 'Public Sans', sans-serif;
   font-size: 15px;
   line-height: 28px;
-  font-weight: 700;
+  font-weight: 400;
+}
+
+@mixin logo {
 }
 
 @mixin demo-btn {
@@ -55,6 +58,6 @@
 
 @mixin break-down($width) {
   @media only screen and (max-width: $width) {
-    @content
+    @content;
   }
 }

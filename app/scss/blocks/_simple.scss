@@ -1,5 +1,8 @@
 .simple {
-  margin-bottom: 146px;
+  padding: 150px 0;
+  background-image: url(../images/simple-bg.png);
+  background-repeat: no-repeat;
+  background-position: right calc(50% - 457px) top 57px;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -21,6 +24,71 @@
   }
 }
 
+@include break-down(1190px) {
+  .simple {
+    &__container {
+      max-width: 1000px;
+    }
+    &__title {
+      margin-top: 0;
+      font-size: 36px;
+      line-height: 46px;
+    }
+    &__text {
+      margin: 0;
+    }
+    &__img {
+      margin-left: 20px;
+    }
+    &__img:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+@include break-down(1040px) {
+  .simple {
+    background-image: none;
+    &__container {
+      max-width: 950px;
+    }
+    &__title {
+      margin-top: 0;
+      font-size: 36px;
+      line-height: 46px;
+      text-align: center;
+    }
+    &__text {
+      margin: 0;
+      text-align: center;
+    }
+  }
+}
+
+@include break-down(986px) {
+  .simple {
+    &__container {
+      max-width: 900px;
+    }
+  }
+}
+
+@include break-down(910px) {
+  .simple {
+    &__container {
+      max-width: 800px;
+    }
+    &__title {
+      font-size: 32px;
+      line-height: 38px;
+      text-align: left;
+    }
+    &__text {
+      text-align: left;
+    }
+  }
+}
+
 @include break-down(768px) {
   .simple {
     margin-bottom: 100px;
@@ -33,6 +101,29 @@
     }
     &__title {
       margin-bottom: 24px;
+      text-align: center;
+    }
+    &__text {
+      text-align: center;
+    }
+  }
+}
+
+@include break-down(550px) {
+  .simple {
+    padding: 0;
+    &__container {
+      padding: 0;
+      max-width: 400px;
+    }
+    &__img-content {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+    &__img {
+      margin: 0;
+      margin-bottom: 30px;
     }
   }
 }
@@ -54,10 +145,10 @@
     }
     &__img-content {
       margin-bottom: 48px;
+      flex-direction: row;
     }
     &__img {
       margin: 0;
-      margin-right: 24px;
       width: 152px;
       height: 290px;
     }

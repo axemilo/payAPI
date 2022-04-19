@@ -2,7 +2,7 @@
   padding-bottom: 75px;
   background-image: url(../images/header-bg.png);
   background-repeat: no-repeat;
-  background-position: top -680px right -650px;
+  background-position: right calc(50% - 608px) bottom 186px;
   position: relative;
   z-index: 1;
   padding-top: 162px;
@@ -51,6 +51,7 @@
   &__subtext-link {
     color: $blue;
     transition: color 400ms ease;
+    font-weight: 700;
   }
 
   &__subtext-link:hover {
@@ -61,7 +62,23 @@
 @include break-down(1400px) {
   .intro {
     &__container {
-      max-width: 1350px;
+      max-width: 1200px;
+    }
+  }
+}
+
+@include break-down(1210px) {
+  .intro {
+    &__container {
+      max-width: 1000px;
+    }
+  }
+}
+
+@include break-down(1000px) {
+  .intro {
+    &__container {
+      max-width: 840px;
     }
   }
 }
@@ -79,7 +96,7 @@
 }
 @include break-down(768px) {
   .intro {
-    background-position: top -1100px center;
+    background-position: top -1124px right -411px;
     &__container {
       flex-direction: column-reverse;
       text-align: center;
@@ -112,6 +129,7 @@
 
 @include break-down(425px) {
   .intro {
+    background-position: top -1145px right -575px;
     &__container {
       max-width: 370px;
     }

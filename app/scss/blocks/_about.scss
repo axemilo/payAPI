@@ -1,5 +1,7 @@
 .about {
   background-color: $black;
+  background-image: url(../images/about-bg.png);
+  background-repeat: no-repeat;
   color: $white;
   margin-bottom: 150px;
   padding: 100px 0;
@@ -36,6 +38,7 @@
     color: $black;
   }
   &__list {
+    margin: 0;
     padding: 0;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -127,6 +130,14 @@
 @include break-down(490px) {
   .about {
     &__container {
+      max-width: 450px;
+    }
+    &__list {
+      margin-top: 0;
+      grid-template-columns: auto auto;
+    }
+    &__title {
+      font-size: 36px;
     }
   }
 }
@@ -135,6 +146,9 @@
   .about {
     margin-bottom: 80px;
     padding: 80px 0;
+    &__container {
+      max-width: 340px;
+    }
     &__title {
       margin: 0;
       font-size: 32px;
@@ -148,8 +162,33 @@
     &__list {
       margin: 0;
       grid-template-columns: auto auto;
-      grid-column-gap: 50px;
+      grid-column-gap: 30px;
       margin-bottom: 56px;
+    }
+    &__item-img {
+      width: 110px;
+    }
+  }
+}
+
+@include break-down(320px) {
+  .about {
+    &__container {
+      padding: 20px 0;
+      max-width: 280px;
+    }
+    &__title {
+      font-size: 30px;
+    }
+    &__text {
+      font-size: 12px;
+    }
+    &__list {
+      grid-column-gap: 30px;
+    }
+    &__item-img {
+      margin: 0;
+      width: 100px;
     }
   }
 }

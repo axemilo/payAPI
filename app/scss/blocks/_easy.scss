@@ -1,5 +1,4 @@
 .easy {
-  margin-bottom: 150px;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -14,6 +13,57 @@
     @include text;
     color: $light-blue;
     max-width: 445px;
+  }
+}
+
+@include break-down(1170px) {
+  .easy {
+    &__container {
+      max-width: 990px;
+    }
+    &__title {
+      font-size: 36px;
+      line-height: 48px;
+    }
+    &__img {
+      margin-right: 20px;
+    }
+  }
+}
+
+@include break-down(1020px) {
+  .easy {
+    &__container {
+      max-width: 920px;
+    }
+  }
+}
+
+@include break-down(950px) {
+  .easy {
+    &__container {
+      max-width: 850px;
+    }
+  }
+}
+
+@include break-down(880px) {
+  .easy {
+    &__container {
+      max-width: 760px;
+    }
+    &__title {
+      margin-top: 0;
+      font-size: 30px;
+      margin-bottom: 16px;
+    }
+    &__text {
+      margin: 0;
+      font-size: 15px;
+    }
+    &__img {
+      margin-right: 20px;
+    }
   }
 }
 

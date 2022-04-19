@@ -1,14 +1,19 @@
 .footer {
   background-color: $black;
-  padding: 35px 0;
+  padding: 18px 0;
+  background-image: url(../images/footer-bg.png);
+  background-repeat: no-repeat;
+  background-position: right calc(50% - 415px) bottom 0px;
   &__container {
     display: flex;
     align-items: center;
+    padding: 0;
   }
   &__logo {
     margin-right: 63px;
   }
   &__list {
+    margin: 0;
     padding: 0;
     display: flex;
     margin-right: auto;
@@ -29,6 +34,7 @@
   &__social-list {
     display: flex;
     align-items: center;
+    padding: 0;
   }
   &__social-item {
     margin-left: 24px;
@@ -42,12 +48,78 @@
   }
 }
 
+@include break-down(1160px) {
+  .footer {
+    &__container {
+      max-width: 1000px;
+    }
+  }
+}
+
+@include break-down(1010px) {
+  .footer {
+    &__container {
+      max-width: 900px;
+    }
+  }
+}
+
+@include break-down(910px) {
+  .footer {
+    background-image: none;
+
+    &__container {
+      max-width: 860px;
+    }
+    &__item {
+      margin-right: 30px;
+    }
+  }
+}
+
+@include break-down(850px) {
+  .footer {
+    &__container {
+      max-width: 760px;
+    }
+  }
+}
+
 @include break-down(768px) {
   .footer {
     padding: 35px 0;
     &__container {
       padding: 0;
       max-width: 689px;
+    }
+  }
+}
+
+@include break-down(710px) {
+  .footer {
+    &__container {
+      max-width: 600px;
+    }
+  }
+}
+
+@include break-down(610px) {
+  .footer {
+    &__container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    &__social-item {
+      margin-left: 16px;
+    }
+    &__social-item:first-child {
+      margin-left: 0;
+    }
+    &__list {
+      margin: 0;
+    }
+    &__logo {
+      margin-right: 32px;
     }
   }
 }

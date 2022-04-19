@@ -37,6 +37,10 @@
     background-color: $white;
     color: $black;
   }
+  &__link:active {
+    background-color: $pink;
+    color: $white;
+  }
   &__list {
     margin: 0;
     padding: 0;

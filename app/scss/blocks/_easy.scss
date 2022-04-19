@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
   }
   &__title {
     @include big-title;
@@ -13,6 +14,9 @@
     @include text;
     color: $light-blue;
     max-width: 445px;
+  }
+  &__img-content {
+    justify-content: center;
   }
 }
 
@@ -78,10 +82,13 @@
     &__img {
       margin: 0;
       width: 400px;
-
       margin-bottom: 48px;
     }
+    &__title {
+      @include big-title;
+    }
     &__text {
+      font-size: 15px;
       max-width: 573px;
     }
   }

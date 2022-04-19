@@ -17,6 +17,7 @@
     border-radius: 24px;
     padding: 16px 0 14px 27px;
     color: $blue;
+    transition: all 500ms ease;
   }
 
   &__input::placeholder {
@@ -27,8 +28,12 @@
     color: $blue;
     opacity: 0.5;
   }
-  &__input:hover::placeholder {
-    color: $blue;
+  &__input:hover {
+    box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px $pink, 0 0 20px $pink,
+      0 0 30px $pink, 0 0 40px $pink;
+  }
+  &__input:focus {
+    color: $black;
   }
   &__btn {
     margin-left: -38px;
@@ -67,10 +72,14 @@
   .ready {
     margin-bottom: 100px;
     &__container {
+      padding: 0;
       flex-direction: column;
     }
     &__title {
+      margin: 0;
+
       margin-bottom: 40px;
+      @include big-title;
     }
   }
 }

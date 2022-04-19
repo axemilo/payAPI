@@ -26,6 +26,7 @@
     border-radius: 24px;
     padding: 16px 0 14px 27px;
     color: $blue;
+    transition: all 500ms ease;
   }
 
   &__input::placeholder {
@@ -36,9 +37,14 @@
     color: $blue;
     opacity: 0.5;
   }
-  &__input:hover::placeholder {
-    color: $blue;
+  &__input:hover {
+    box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px $pink, 0 0 20px $pink,
+      0 0 30px $pink, 0 0 40px $pink;
   }
+  &__input:focus {
+    color: $black;
+  }
+
   &__btn {
     margin-left: -38px;
     @include demo-btn;
@@ -117,6 +123,7 @@
 @include break-down(545px) {
   .intro {
     &__container {
+      max-width: 480px;
       text-align: center;
     }
     &__title {
@@ -124,10 +131,10 @@
       line-height: 44px;
       margin: 0;
       margin-bottom: 24px;
-      font-size: 35px;
+      font-size: 30px;
     }
     &__input {
-      width: 330px;
+      width: 270px;
     }
   }
 }
@@ -198,10 +205,10 @@
   }
 }
 
-@include break-down(320px) {
+@include break-down(330px) {
   .intro {
     &__container {
-      max-width: 300px;
+      max-width: 250px;
     }
     &__title {
       font-size: 24px;

@@ -272,8 +272,10 @@
 }
 
 @include break-down(375px) {
-  .header__container {
-    max-width: 340px;
+  .header {
+    &__container {
+      max-width: 340px;
+    }
   }
 }
 

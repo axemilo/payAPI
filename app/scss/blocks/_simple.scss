@@ -49,6 +49,7 @@
 @include break-down(1040px) {
   .simple {
     background-image: none;
+    padding: 0;
     &__container {
       max-width: 950px;
     }
@@ -102,6 +103,7 @@
     &__title {
       margin-bottom: 24px;
       text-align: center;
+      @include big-title;
     }
     &__text {
       text-align: center;
@@ -140,6 +142,8 @@
       margin: 0;
       margin-bottom: 24px;
       text-align: center;
+      font-size: 32px;
+      line-height: 36px;
     }
     &__text {
       margin: 0;

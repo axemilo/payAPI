@@ -42,6 +42,12 @@
   }
 }
 
+@include break-down(1024px) {
+  .header__container {
+    max-width: 920px;
+  }
+}
+
 @include break-down(768px) {
   .header {
     &__container {
@@ -58,6 +64,11 @@
 }
 
 @include break-down(710px) {
+  .header {
+    &__container {
+      max-width: 660px;
+    }
+  }
   .nav {
     margin-right: auto;
     &__list {
@@ -85,6 +96,14 @@
     margin-right: auto;
     &__item {
       margin-right: 15px;
+    }
+  }
+}
+
+@include break-down(585px) {
+  .header {
+    &__container {
+      max-width: 520px;
     }
   }
 }
@@ -238,5 +257,17 @@
 @include break-down(390px) {
   .header__container {
     max-width: 340px;
+  }
+}
+
+@include break-down(375px) {
+  .header__container {
+    max-width: 340px;
+  }
+}
+
+@include break-down(320px) {
+  .header__container {
+    max-width: 280px;
   }
 }

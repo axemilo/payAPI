@@ -58,6 +58,25 @@
   }
 }
 
+@include break-down(1400px) {
+  .intro {
+    &__container {
+      max-width: 1350px;
+    }
+  }
+}
+
+@include break-down(840px) {
+  .intro {
+    &__container {
+      max-width: 750px;
+    }
+    &__title {
+      font-size: 64px;
+      line-height: 68px;
+    }
+  }
+}
 @include break-down(768px) {
   .intro {
     background-position: top -1100px center;
@@ -71,6 +90,47 @@
     &__title {
       @include big-title;
       width: 573px;
+    }
+  }
+}
+
+@include break-down(535px) {
+  .intro {
+    &__container {
+      text-align: center;
+    }
+    &__title {
+      line-height: 44px;
+      margin: 0;
+      margin-bottom: 24px;
+    }
+    &__input {
+      width: 330px;
+    }
+  }
+}
+
+@include break-down(425px) {
+  .intro {
+    &__container {
+      max-width: 370px;
+    }
+    &__title {
+      font-size: 32px;
+      line-height: 36px;
+      max-width: 350px;
+      margin: 0 auto;
+      margin-bottom: 24px;
+    }
+    &__input {
+      margin-bottom: 16px;
+    }
+    &__btn {
+      width: 330px;
+      margin: 0 auto;
+    }
+    &__subtext {
+      margin: 0;
     }
   }
 }
@@ -111,6 +171,30 @@
     }
     &__img {
       margin-bottom: 26px;
+    }
+  }
+}
+
+@include break-down(320px) {
+  .intro {
+    &__container {
+      max-width: 300px;
+    }
+    &__title {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    &__input {
+      margin: 0 auto;
+      width: 280px;
+      margin-bottom: 16px;
+    }
+    &__btn {
+      width: 280px;
+      margin-bottom: 16px;
+    }
+    &__img {
+      margin-bottom: 30px;
     }
   }
 }

@@ -76,6 +76,9 @@
       text-align: center;
     }
     &__img {
+      margin: 0;
+      width: 425px;
+
       margin-bottom: 48px;
     }
     &__text {
@@ -101,7 +104,7 @@
       margin: 0;
     }
     &__img {
-      width: 328px;
+      width: 300px;
       height: 209px;
       margin-bottom: 48px;
     }

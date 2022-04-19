@@ -111,15 +111,17 @@
   }
 }
 
-@include break-down(535px) {
+@include break-down(545px) {
   .intro {
     &__container {
       text-align: center;
     }
     &__title {
+      text-align: center;
       line-height: 44px;
       margin: 0;
       margin-bottom: 24px;
+      font-size: 38px;
     }
     &__input {
       width: 330px;
@@ -134,7 +136,7 @@
       max-width: 370px;
     }
     &__title {
-      font-size: 32px;
+      font-size: 31px;
       line-height: 36px;
       max-width: 350px;
       margin: 0 auto;

@@ -39,6 +39,9 @@
   &__btn:hover {
     background-color: $light-pink;
   }
+  &__btn:active {
+    background-color: $pink;
+  }
 }
 
 @include break-down(1024px) {

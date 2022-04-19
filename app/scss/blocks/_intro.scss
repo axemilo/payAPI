@@ -48,6 +48,9 @@
   &__btn:hover {
     background-color: $light-pink;
   }
+  &__btn:active {
+    background-color: $pink;
+  }
   &__subtext-link {
     color: $blue;
     transition: color 400ms ease;
@@ -121,7 +124,7 @@
       line-height: 44px;
       margin: 0;
       margin-bottom: 24px;
-      font-size: 38px;
+      font-size: 35px;
     }
     &__input {
       width: 330px;

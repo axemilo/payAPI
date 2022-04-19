@@ -15,6 +15,9 @@
   &__link:hover {
     background-color: $light-pink;
   }
+  &__link:active {
+    background-color: $pink;
+  }
   &__burger {
     display: none;
   }
@@ -40,6 +43,9 @@
   }
   &__link:hover {
     color: $black;
+  }
+  &__link:active {
+    color: $light-blue;
   }
 }
 

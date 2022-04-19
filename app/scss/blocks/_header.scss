@@ -120,7 +120,7 @@
 @include break-down(480px) {
   .header {
     &__container {
-      max-width: 430px;
+      max-width: 440px;
       justify-content: space-between;
     }
     &__logo {
@@ -226,5 +226,17 @@
     &.active {
       right: 0;
     }
+  }
+}
+
+@include break-down(440px) {
+  .header__container {
+    max-width: 380px;
+  }
+}
+
+@include break-down(390px) {
+  .header__container {
+    max-width: 340px;
   }
 }

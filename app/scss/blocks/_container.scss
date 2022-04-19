@@ -21,3 +21,15 @@
     max-width: 500px;
   }
 }
+
+@include break-down(440px) {
+  .container {
+    max-width: 400px;
+  }
+}
+
+@include break-down(400px) {
+  .container {
+    max-width: 360px;
+  }
+}

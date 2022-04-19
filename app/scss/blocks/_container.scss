@@ -3,3 +3,21 @@
   margin: 0 auto;
   padding: 20px 0;
 }
+
+@include break-down(710px) {
+  .container {
+    max-width: 580px;
+  }
+}
+
+@include break-down(650px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+@include break-down(540px) {
+  .container {
+    max-width: 500px;
+  }
+}
